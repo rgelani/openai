@@ -32,6 +32,7 @@
         }
     },
     "autoload-dev": {
+        "platform-check": false,
         "psr-4": {
             "Tests\\": "tests/"
         }
