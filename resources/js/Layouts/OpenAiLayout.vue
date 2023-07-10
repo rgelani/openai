@@ -29,9 +29,9 @@ const showingNavigationDropdown = ref(false);
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <NavLink :href="route('generate-text')" :active="route().current('generate-text')">
+                                    <!-- <NavLink :href="route('generate-text')" :active="route().current('generate-text')">
                                     Generate Text
-                                </NavLink>
+                                </NavLink> -->
                                 <NavLink :href="route('chat')" :active="route().current('chat')">
                                     Chat
                                 </NavLink>
