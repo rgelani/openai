@@ -4,6 +4,7 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\TextToImageController;
 use App\Http\Controllers\ProfileController;
 
 
@@ -50,6 +51,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/text-to-image', function () {
         return Inertia::render('Tools/TextToImage');
     })->name('text-to-image');
+    Route::post('/text-to-image', [TextToImageController::class, 'generateImage'])->name('generate.image');
 });
 
 require __DIR__ . '/auth.php';

@@ -5,7 +5,7 @@
     </div>
     <div class="ml-auto">
         <div class="pt-6">
-            <main class="">
+                    <main class="w-[80%] m-auto">
                 <slot name="images" />
             </main>
         </div>
