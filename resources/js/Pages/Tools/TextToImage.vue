@@ -18,7 +18,6 @@ const submit = () => {
     });
 }
 </script>
-
 <template>
                 <!-- <Head title="Image Generator" /> -->
                 <OpenAiLayout>
